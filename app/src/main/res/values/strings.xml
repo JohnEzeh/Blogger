@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Blogger</string>
+    <string name="noInternet">No Internet Access</string>
+</resources>
