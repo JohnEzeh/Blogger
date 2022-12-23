@@ -105,14 +105,16 @@ private List<String> followingList;
                 for (DataSnapshot dataSnapshot : snapshot.getChildren()){
                     Post post = dataSnapshot.getValue(Post.class);
 
-                     for (String id : followingList){//////found it
-                         assert post != null;
-                         if (post.getPublisher().equals(id)){
-                             postList.add(post);
-                         }
-                     }
                     assert post != null;
                     postList.add(post);
+                     //for (String id : followingList){//////found it
+
+                         //if (post.getPublisher().equals(id)){
+                             //postList.add(post);
+                         //}
+                    // }
+                    //assert post != null;
+                   // postList.add(post);
                 }
                 postAdapter.notifyDataSetChanged();
                 progress_circular.setVisibility(View.GONE);
